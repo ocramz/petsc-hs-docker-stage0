@@ -5,14 +5,13 @@ sudo:
 language: 
   c 
   
-env:
-  - AUTH=ocramz
-  - NAME=petsc-hs-docker-stage0
-  - TAG=${AUTH}:${NAME}
-  
-
 services:
   - docker
   
+before_install:
+  - export NAME=petsc-hs-docker-stage0
+  - export AUTH=ocramz
+  - export TAG=${AUTH}:${NAME}
+
 script:
   - docker build -t ${TAG} .
