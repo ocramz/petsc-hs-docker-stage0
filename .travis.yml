@@ -1,0 +1,18 @@
+sudo: 
+  # required
+  false
+
+language: 
+  c 
+  
+env:
+  - AUTH=ocramz
+  - NAME=petsc-hs-docker-stage0
+  - TAG=${AUTH}:${NAME}
+  
+
+services:
+  - docker
+  
+script:
+  - docker build -t ${TAG} .
