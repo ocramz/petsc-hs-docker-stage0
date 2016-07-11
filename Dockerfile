@@ -1,6 +1,6 @@
 FROM ocramz/petsc-docker
 
-MAINTAINER Marco Zocca < github.com/ocramz/compute-cluster-sandbox >
+MAINTAINER Marco Zocca < github.com/ocramz >
 
 # ------------------------------------------------------------
 # Add an 'mpirun' user
@@ -46,7 +46,9 @@ RUN mkdir -p $LOCAL_DIR && \
 RUN apt-get update && \
     apt-get -qq install -y --no-install-recommends \
           bzip2 unzip git libgmp-dev xz-utils \
- && apt-get clean && apt-get purge && rm -rf /var/lib/apt/lists/*
+ && apt-get clean && \
+    apt-get purge && \
+    rm -rf /var/lib/apt/lists/*
 
 
 # ------------------------------------------------------------
