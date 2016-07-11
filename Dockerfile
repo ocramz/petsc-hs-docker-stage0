@@ -1,4 +1,4 @@
-FROM ocramz/petsc-docker:petsc-3.7.2
+FROM ocramz/petsc-docker
 
 MAINTAINER Marco Zocca < github.com/ocramz/compute-cluster-sandbox >
 
