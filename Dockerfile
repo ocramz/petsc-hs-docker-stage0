@@ -1,4 +1,4 @@
-FROM ocramz/petsc-docker
+FROM ocramz/petsc-docker@sha256:69bb1f52a8832f472ebceab5a162f5bb1cf6fe8ca48aa6051af6045cf3ae87a1
 
 MAINTAINER Marco Zocca < github.com/ocramz >
 
