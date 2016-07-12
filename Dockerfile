@@ -71,6 +71,6 @@ RUN printenv
 
 
 # ------------------------------------------------------------
-# SHOW PETSC CONFIGURE LOG
+# SHOW PETSC CONFIGURE OPTIONS
 # ------------------------------------------------------------
 RUN cat ${PETSC_DIR}/${PETSC_ARCH}/lib/petsc/conf/configure.log | grep "Configure Options"
